@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+</head>
+<body>
+    <h3>Задание 4</h3>
+
+    <div id="container"></div>
+    <input id="add-item-btn" type="button" value="+">
+
+    
+    <script type="application/javascript">
+        let containerDiv = document.getElementById('container');
+        let button = document.getElementById('add-item-btn');
+        
+
+        function onButtonClick() {
+            let newDiv = document.createElement('div');
+            newDiv.classList.add('element');
+            newDiv.innerText = 'Element';
+            containerDiv.appendChild(newDiv);
+        }
+        button.addEventListener('click', onButtonClick);
+    </script>
+</body>
+
+</html>
