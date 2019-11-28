@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body onload="intervalId(), timerId()">
+    <h3>Задание 1</h3>
+    <div id="container"></div>
+
+    
+    <script type="application/javascript">
+        let containerDiv = document.getElementById('container');
+        let button = document.getElementById('add-item-btn');
+        
+        function randomIntFromInterval(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        var intervalId = setInterval(function() {
+            let newDiv = document.createElement('div');
+            newDiv.classList.add('element');
+            newDiv.innerText = randomIntFromInterval(0, 20);
+            containerDiv.appendChild(newDiv);
+        }, 5000);
+
+        var timerId = setTimeout(function() {
+            clearInterval(intervalId);
+            }, 30000);
+    </script>
+</body>
+
+</html>

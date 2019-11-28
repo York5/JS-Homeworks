@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.country {
+    overflow: hidden;
+    border-bottom: dotted 1px #444444;
+    margin-bottom: 1em;
+    padding-bottom: 3px;
+}
+
+.country a {
+    float: right;
+}
+
+.flag_pic {
+    float: left;
+    width: 40%;
+    overflow:hidden;
+    margin-right: 40px;
+}
+
+.flag_pic img{
+width: 100%;
+height: auto;
+}
+
+
+.main_info {
+    float: leftl;
+    width: 60px;
+    overflow:hidden;
+}
